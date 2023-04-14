@@ -1092,14 +1092,23 @@
             <span itemprop="postalCode">33200</span>
             <span itemprop="addressCountry">France</span>
           </div>
-          <div class="phone">
+          <div
+            class="phone"
+            itemprop="telephone"
+            itemscope
+            itemtype="http://schema.org/ContactPoint"
+          >
             Téléphone :
-            <a href="tel:0556677889" itemprop="telephone">05 56 67 78 89</a>
+            <a href="tel:0556677889"
+              ><span itemprop="telephone">05 56 67 78 89</span></a
+            >
           </div>
           <meta itemprop="openingHours" content="Mo-Fr 08:00-19:00" />
           <div class="hours" itemprop="openingHours">
             Ouvert du Lundi au Vendredi de 08h00 a 19h00
           </div>
+          <meta itemprop="priceRange" content="Prix entre 10€ et 50€" />
+          <meta itemprop="image" content="https://example.com/image.jpg" />
         </section>
       </div>
     </footer>
